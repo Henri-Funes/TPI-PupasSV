@@ -1,0 +1,4 @@
+#ignorar el pipeline
+Jenkinsfile
+#ignorar  este comentario 00
+/nbproject/private/

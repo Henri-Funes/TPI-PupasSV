@@ -1,0 +1,42 @@
+{
+  "name": "pupasfe",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha \"test/**/*.js\" --reporter spec && mocha \"test/**/*.js\" --reporter mocha-junit-reporter --reporter-options mochaFile=./reports/junit/test-results.xml",
+    "coverage": "nyc npm test",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelMartinez01/PupasFE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuelMartinez01/PupasFE/issues"
+  },
+  "homepage": "https://github.com/samuelMartinez01/PupasFE#readme",
+  "devDependencies": {
+    "chai": "^5.2.0",
+    "global-jsdom": "^26.0.0",
+    "jsdom": "^26.1.0",
+    "mocha": "^11.5.0",
+    "mocha-junit-reporter": "^2.2.1",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.1.10",
+    "nyc": "^17.1.0",
+    "sinon": "^20.0.0",
+    "sonar-scanner": "^3.1.0"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
